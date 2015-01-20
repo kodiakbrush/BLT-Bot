@@ -23,7 +23,7 @@ void setup() {
 
 // -----------------FUNCTION loop for running motor A backward-------------------- //
 
-int Backward(time_back) // Set the outputs to run the motor backward
+void Backward(int time_back) // Set the outputs to run the motor backward
 {
   digitalWrite(BRAKE_A, LOW);  // setting againg the brake LOW to disable motor brake
   digitalWrite(DIR_A, LOW);    // now change the direction to backward setting LOW the DIR_A pin
@@ -39,5 +39,5 @@ int Backward(time_back) // Set the outputs to run the motor backward
 // ------------------- MAIN LOOP ---------------------------- //
 void loop()
 {
-  Backward(500)
+  Backward(0);
 }
