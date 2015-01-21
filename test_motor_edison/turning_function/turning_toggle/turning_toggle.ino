@@ -18,16 +18,18 @@ void loop() {
   digitalWrite(DIR_B,ChangeDirection()); //Run Direction Change to check switch
   digitalWrite(BRAKE_B, LOW);  // setting brake LOW disable motor brake
   analogWrite(PWM_B, 50);     // Set the speed of motor b, 255 is the maximum value
-  delay(500);
   
 }
+
+//Change Direction Function 
 boolean ChangeDirection() {
   if(digitalRead(SWITCH)==HIGH){
+    delay(500);
     if(CurrentDirection==LOW){
-      boolean CurrentDirection=HIGH
+      boolean CurrentDirection=HIGH;
       return HIGH;}
     else{
-      boolean CurrentDirection=LOW
+      boolean CurrentDirection=LOW;
       return LOW;}
   }
   else{
