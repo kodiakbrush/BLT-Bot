@@ -24,8 +24,10 @@ void loop() {
 boolean ChangeDirection() {
   if(digitalRead(SWITCH)==HIGH){
     if(CurrentDirection==LOW){
+      boolean CurrentDirection=HIGH
       return HIGH;}
     else{
+      boolean CurrentDirection=LOW
       return LOW;}
   }
   else{
